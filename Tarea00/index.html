@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 0.0</title>
+  </head>
+  <body>
+    <h2>Descripción de ejercicio</h2>
+    <p>
+      Juego de "capturar" tipos de imagenes con monos (el animal) con los cuales
+      puedes conseguir varios premios. El juego consiste en que según el usuario
+      navega por la página web del creador (por ejemplo una página de ventas de
+      cualquier cosa), en cualquier momento puede aparecer uno de estos monos de
+      forma aleatoria, el usuario clica en ellos y los acumula. Hay distribuidos
+      100 de estos monos, el primer usuario que consiga reunir una mayoría gana
+      un premio.
+    </p>
+
+    <h2>Como lo haría:</h2>
+
+    <ol>
+      <li>Incluir imagen de mono con una etiqueta img.</li>
+      <li>
+        Subir la imagenes al servidor y añadir un contador que vaya de 100 a 0.
+      </li>
+      <li>
+        Crear una base de datos con datos de usuario y un contador asociado que
+        sume el nº de imagenes clicadas.
+      </li>
+      <li>
+        Crear un algoritmo para que el servidor lance de forma aleatoria una de
+        estas imagenes al navegador del usuario.
+      </li>
+      <li>
+        Añadir una función javascript para que el usuario vea la imagen de forma
+        dinámica (aparece al llegar a cierto punto usando el scroll del ratón
+        por ejemplo). Esta es una imagen que funciona como un botón hecho con html.
+      </li>
+
+      <li>
+        Cuando el usuario clique sobre la imagen al tener función de botón, enviar esa información al
+        servidor que descuenta en uno el contador de imagenes y aumenta en uno
+        el contador del usuario.
+      </li>
+
+      <li>
+        Cuando el contador de servidor llega a 0, busca en la base de datos al
+        usuario con más imagenes.
+      </li>
+      <li>
+        Lanzar al usuario en ese momento de la propia web usando javascript (porque tiene que ser dinámico) un mensaje
+        advirtiendole de que ha ganado.
+      </li>
+      
+    </ol>
+  </body>
+</html>
